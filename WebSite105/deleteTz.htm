@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>מחיקת משתמש</title>
+<script type="text/javascript">
+    function findNum(st) {
+        var stle = st.length;
+        var n = 0;
+
+        while (st.charAt(n) >= 0 && st.charAt(n) <= 9 && n <= stle) {
+            n++;
+        }
+        if (n < stle)
+            return false;
+        else
+            return true;
+    }
+    
+    
+    
+    function bedektofes()
+         {
+             // בדיקת ת"ז
+           
+             if (tz_delete.TZ.value == "")
+              {
+                alert("הכנס תעודת זהות למחיקה");
+                tz_delete.TZ.focus();
+                return false;
+            }
+
+            //בדיקת הכנסת מספר
+            if (!findNum(tz_delete.TZ.value)) 
+            {
+                alert("הכנס תעודת זהות תקינה המכילה מספרים");
+                tz_delete.TZ.focus();
+                return false;
+
+            }
+
+            alert("הנתונים נשלחו בהצלחה");
+            return true;
+        }
+        </script>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="styles.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .style1
+        {
+            text-align: left;
+        }
+        .style2
+        {
+            color: #000000;
+        }
+        .style3
+        {
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+
+<div id="main">
+<!-- header begins -->
+
+<!-- header ends -->
+    <!-- content begins -->
+    	<div id="content">
+        	<div id="left">
+            	<div id="header">
+                    <div id="logo" class="style9">
+                        <div class="style9">
+                            <a href="Welcome.html">אבות המזון</a></div>
+                        <h2>© Hodaya Vanunu</h2>
+                    </div>
+                    <div id="buttons_bg">
+                        <div id="buttons">
+                          <div class="but_1"><a href="Welcome.html" title="">Home</a></div>
+                          <div class="but"><a href="insert_freind_session.aspx" title="">Insert Friend</a></div>
+                          <div class="but"><a href="survey_session.aspx" title="">Survey</a></div>
+                          <div class="but"><a href="login_session.aspx" title="">Login</a></div>
+                         <div class="but"><a href="exit_session.aspx" title="">Logout</a></div>
+                         </div>
+                    </div>
+                </div>
+                <div class="white">
+                  <h2 class="style3">מחיקת משתמש</h2>
+                    <p>
+                        &nbsp;<form name="tz_delete" action="DeleteTzTofes1.aspx" method="post" onsubmit="return bedektofes()">
+                    &nbsp; :&nbsp; הקש תעודת זהות למחיקת משתמש     <p style="text-align: right">
+        <input id="Submit1" type="submit" value="שלח" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     <input class="style50" name="TZ" 
+                         style="margin-bottom: 0px; background-color: #CC99FF; width: 120px; text-align: right;" 
+                         type="text"/></p>
+                    <p style="text-align: right">
+                        &nbsp;</p>
+</form>
+    <a href="Welcome.html"">חזרה לדף הראשי</a><img src="images.jpg" />
+                    <br />
+                    <br />
+&nbsp;<br />
+<hr />&nbsp;</p>
+                    &nbsp;</p>
+              </div> 
+           	</div>  
+            <div id="right">
+            	<div class="healthyfood1.JPG">
+                    <img alt="" src="healthyfood1.JPG" /><br />
+                    <div class="read_r"><hr class="style1" />
+                        <div class="style1">
+                            <a href="Gallery.htm"><span class="style5">גלריית תמונות/>
+<hr />
+<a href="T_Pahmemot.htm"><span class="style5">פחמימות</span></a>
+<hr />
+<a href="T_Helbonim.htm"><span class="style5">חלבונים</span></a>
+<br class="style2" />
+<hr />
+<a href="T_Shumanim.htm"><span class="style5">שומנים</span></a>
+<br class="style2" />
+<hr />
+<a href="T_Vitaminim.htm"><span class="style5">ויטמינים</span></a>
+<br class="style2" />
+<hr />
+<a href="T_Mineralim.htm"><span class="style5">מינרלים</span></a>
+<br class="style2" />
+<hr />
+<a href="Delete_TZ_session.aspx"><span class="style5">מחיקת משתמש</span></a>
+<br class="style2" />
+<hr />
+<a href="update_email_session.aspx"><span class="style5">עדכון אימייל</span></a>
+<br class="style2" />
+<hr />
+<a href="update_pelephon_ssesion.aspx"><span class="style5">עדכון פלאפון</span></a>
+<br class="style2" />
+<hr />
+<a href="update_telephon_session.aspx"><span class="style5">עדכון טלפון</span></a>
+<br class="style2" />
+<hr />
+<a href="survey_session.aspx"><span class="style5">סקר</span></a>
+<br class="style2" />
+<hr />
+<a href="insert_freind_session.aspx"><span class="style5">צרף חבר</span></a>
+<br class="style2" />
+<hr />
+<a href="select_dochot.aspx"><span class="style1">דוחות</span></a>
+<br />
+<hr />
+                        </div>
+</div>
+           	    </div>
+            </div> 
+            <div style="clear: both"></div>
+     		</div>
+    <!-- content ends -->
+    <!-- footer begins -->
+    <div id="footer">
+    </div>
+</div>
+
+</body>
+</html>
